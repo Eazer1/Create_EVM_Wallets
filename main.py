@@ -2,8 +2,6 @@ from eth_account import Account
 from eth_account.signers.local import LocalAccount
 import secrets
 
-print()
-
 def create_wallets(amount, file_name, file_format, type_wallet, K=None):
     Account.enable_unaudited_hdwallet_features()
     delimiter = ':' if file_format == 0 else ','
